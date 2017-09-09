@@ -16,5 +16,5 @@ use cron:
 
 Scroll to the bottom and add the following line (after all the #'s):
 
-`@reboot python /bin/your_script.py &`
+`@reboot python /bin/note.py &`
 
