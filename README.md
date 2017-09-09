@@ -2,6 +2,7 @@
 This gtk application helps you save some important things without having to switch to a different app. Simply start this app and use the icon in the status bar to add and view notes.
 
 #running instructions
+
 simply clone/download the repo and run the note.py script:
 
 `python note.py`
