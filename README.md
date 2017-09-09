@@ -10,11 +10,9 @@ simply clone/download the repo and run the note.py script:
 to auto start the script at startup
 use cron:
 
-`sudo cp -i /path/to/note.py /bin`
-
 `sudo crontab -e`
 
 Scroll to the bottom and add the following line (after all the #'s):
 
-`@reboot python /bin/note.py &`
+`@reboot python /path/to/note.py &`
 
