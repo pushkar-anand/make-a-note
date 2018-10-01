@@ -5,7 +5,7 @@ This gtk application helps you save some important things without having to swit
 
 simply clone/download the repo and run the note.py script:
 
-`python note.py`
+`python main.py`
 
 to auto start the script at startup
 use cron:
@@ -14,5 +14,5 @@ use cron:
 
 Scroll to the bottom and add the following line (after all the #'s):
 
-`@reboot python /path/to/note.py &`
+`@reboot python /path/to/main.py &`
 
