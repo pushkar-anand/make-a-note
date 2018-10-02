@@ -8,6 +8,8 @@ gi.require_version('AppIndicator3', '0.1')
 from gi.repository import Gtk
 from gi.repository import AppIndicator3
 
+ind = None
+
 
 def build_menu(n):
     menu = Gtk.Menu()
@@ -34,19 +36,30 @@ def build_menu(n):
 def new_n(__):
     print("new note")
     win = new_note.NewNoteWindow()
-    win.connect("delete-event", Gtk.main_quit)
+    win.resize(300, 300)
+    win.connect("delete-event", reset)
     win.show_all()
     Gtk.main()
 
+
+def reset():
+    ind.set_menu(build_menu(get_notes()))
+    Gtk.main_quit()
 
 def view_n(x, nid):
     print(id)
     win = view_note.NewNoteWindow(nid)
-    win.resize(600,600)
+    win.resize(600, 600)
     win.connect("delete-event", Gtk.main_quit)
     win.show_all()
     Gtk.main()
-    
+
+
+def get_notes():
+    with open('notes.json') as data_file:
+        data = json.load(data_file)
+    return data["notes"]
+
 
 if __name__ == '__main__':
     app_id = "MAKE_A_NOTE"
@@ -54,10 +67,6 @@ if __name__ == '__main__':
     cat = AppIndicator3.IndicatorCategory.APPLICATION_STATUS
     ind = AppIndicator3.Indicator.new(app_id, app_icon, cat)
 
-    with open('notes.json') as data_file:
-        data = json.load(data_file)
-    notes = data["notes"]
-
     ind.set_status(AppIndicator3.IndicatorStatus.ACTIVE)
-    ind.set_menu(build_menu(notes))
+    ind.set_menu(build_menu(get_notes()))
     Gtk.main()
