@@ -17,3 +17,5 @@ Scroll to the bottom and add the following line (after all the #'s):
 `@reboot python /path/to/main.py &`
 
 # Screenshots
+![Screenshot 1](https://raw.githubusercontent.com/pushkar-anand/make-a-note/master/screenshots/1.png)
+![Screenshot 2](https://raw.githubusercontent.com/pushkar-anand/make-a-note/master/screenshots/2.png)
