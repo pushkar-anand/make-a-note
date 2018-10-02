@@ -43,11 +43,13 @@ class NewNoteWindow(Gtk.Window):
 
         new_dict = {'note-id':next_id, 'note-title': note_title, 'note-text':note_text,'note-category':note_cat}
         new_list = notes+ [new_dict]
-        print(new_list)
         new_json = "{\"notes\":" +json.dumps(new_list)+ "}"
         print(new_json)
         with open('notes.json', 'r+') as data_file:
             data_file.seek(0)
             data_file.write(new_json)
             data_file.truncate()
+
+        self.destroy()
+
 

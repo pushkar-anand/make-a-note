@@ -46,6 +46,7 @@ def view_n(x, nid):
     win.connect("delete-event", Gtk.main_quit)
     win.show_all()
     Gtk.main()
+    
 
 if __name__ == '__main__':
     app_id = "MAKE_A_NOTE"

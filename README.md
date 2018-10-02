@@ -17,4 +17,3 @@ Scroll to the bottom and add the following line (after all the #'s):
 `@reboot python /path/to/main.py &`
 
 # Screenshots
-
