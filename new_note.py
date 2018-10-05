@@ -51,5 +51,3 @@ class NewNoteWindow(Gtk.Window):
             data_file.truncate()
 
         self.destroy()
-
-
