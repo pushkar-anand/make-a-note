@@ -3,16 +3,15 @@ An application built over Gimp Toolkit(GTK) to remove to ease the note making pr
 
 # Running instructions
 
-simply clone/download the repo and run the note.py script:
+Download/Clone the repository.
 
 `python main.py`
 
-to auto start the script at startup
-use cron:
+## As a startup service:
+To run this app at start use cron:
 
 `sudo crontab -e`
 
-Scroll to the bottom and add the following line (after all the #'s):
 
 `@reboot python /path/to/main.py &`
 
