@@ -18,9 +18,12 @@ To run this app at start use cron:
 
 `sudo crontab -e`
 
+Scroll to the bottom of the page and add the following line (after all the #'s):
 
 `@reboot python /path/to/main.py &`
 
 # Screenshots
+## Taking new notes:
 ![Screenshot 1](https://raw.githubusercontent.com/pushkar-anand/make-a-note/master/screenshots/1.png)
+## Viewing the notes
 ![Screenshot 2](https://raw.githubusercontent.com/pushkar-anand/make-a-note/master/screenshots/2.png)
