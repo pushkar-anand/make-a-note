@@ -5,6 +5,12 @@ An application built over Gimp Toolkit(GTK) to remove to ease the note making pr
 
 Download/Clone the repository.
 
+Install Gimp-Toolkit(if required): `sudo apt-get install python3 gtk+3 python3-gobject`.
+
+Install gi:
+`sudo apt install python-gi python-gi-cairo python3-gi`
+
+Run the script:
 `python main.py`
 
 ## As a startup service:
