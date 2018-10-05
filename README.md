@@ -1,5 +1,5 @@
 # make-a-note
-This gtk application helps you save some important things without having to switch to a different app. Simply start this app and use the icon in the status bar to add and view notes.
+An application built over Gimp Toolkit(GTK) to remove to ease the note making process. It has over-the-top functionality, which enables the user to take quick notes. Simply start this app and use the icon in the status bar to add and view notes.
 
 # Running instructions
 
