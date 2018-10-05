@@ -10,7 +10,6 @@ from gi.repository import AppIndicator3
 
 ind = None
 
-
 def build_menu(n):
     menu = Gtk.Menu()
     menu_list = Gtk.Menu()

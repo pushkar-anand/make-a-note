@@ -13,6 +13,7 @@ class NewNoteWindow(Gtk.Window):
             data = json.load(data_file)
         notes = data["notes"]
 
+        #Looping through all the notes to check which note is being viewed
         for note in notes:
             print(note)
             if note["note-id"] == nid:
