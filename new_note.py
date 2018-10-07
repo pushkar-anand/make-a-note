@@ -50,4 +50,4 @@ class NewNoteWindow(Gtk.Window):
             data_file.write(new_json)
             data_file.truncate()
 
-        self.destroy()
+        self.destroy()  
